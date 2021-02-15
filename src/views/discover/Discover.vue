@@ -11,9 +11,9 @@
 			</dis-sheet-item>
 		</sheet-item>
 		<mlog-scroll>
-			<scroll-y ref="bs" slot="mlog-item">
+			<scroll-x ref="bs" slot="mlog-item">
 				<dis-mlog :mlog="mlog"></dis-mlog>
-			</scroll-y>
+			</scroll-x>
 		</mlog-scroll>
 	</div>
 </template>
@@ -27,7 +27,7 @@ import DisSheetItem from './childcomps/DisSheetItem'
 import MainDisIcon from 'components/content/maindisicon/MainDisIcon'
 import SheetItem from 'components/common/tabbar/SheetItem'
 import MlogScroll from 'components/common/scroll/MlogScroll'
-import ScrollY from 'components/common/scroll/ScrollY'
+import ScrollX from 'components/common/scroll/ScrollX'
 
 import {
 	getDiscoverBanner, 
@@ -48,7 +48,7 @@ export default {
 		DisSheetItem,
 		SheetItem,
 		MlogScroll,
-		ScrollY,
+		ScrollX,
 		DisMlog
 	},
 	data() {
@@ -70,7 +70,7 @@ export default {
 		this.getDiscoverSheetMethod()
 
 		this.$bus.$on('imageLoad', () => {
-			console.log('监听到图片加载完成');
+			// console.log('监听到图片加载完成');
 			this.$refs.bs.refresh()
 		})
 	},

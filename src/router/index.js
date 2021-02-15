@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 const Discover = () => import('../views/discover/Discover')
-const Boke = () => import('../views/boke/Boke')
+const Singer = () => import('../views/singer/Singer')
 const Profile = () => import('../views/profile/Profile')
 const Village = () => import('../views/village/Village')
 
@@ -18,8 +18,8 @@ const routes = [
 		component: Discover
 	},
 	{
-		path: "/boke",
-		component: Boke
+		path: "/singer",
+		component: Singer
 	}
 	,
 	{

@@ -5,10 +5,10 @@
 				<img slot="item-icon-active" src="~assets/img/tabbar/gitlab.svg" alt="">
 				<div slot="item-text">发现</div>
 			</tab-bar-item>
-			<tab-bar-item path="/boke">
+			<tab-bar-item path="/singer">
 				<img slot="item-icon" src="~assets/img/tabbar/drupal-square.svg" alt="">
 				<img slot="item-icon-active" src="~assets/img/tabbar/drupal.svg" alt="">
-				<div slot="item-text">播客</div>
+				<div slot="item-text">歌手</div>
 			</tab-bar-item>
 			<tab-bar-item path="/profile">
 				<img slot="item-icon" src="~assets/img/tabbar/beatport-square.svg" alt="">

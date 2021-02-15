@@ -45,10 +45,8 @@
 </template>
 
 <script>
-import DisMlog from 'views/discover/childcomps/DisMlog.vue'
-import ScrollY from './ScrollY.vue'
+
 export default {
-  components: { ScrollY, DisMlog },
 	name: 'MlogScroll',
 	created() {
 		

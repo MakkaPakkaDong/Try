@@ -28,6 +28,9 @@ a {
 	color: #333;
 }
 
+ul li {
+	list-style: none;
+}
 
 .clear-fix::after {
   clear: both;

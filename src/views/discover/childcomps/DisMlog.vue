@@ -24,7 +24,7 @@ export default {
 	},
 	methods: {
 		imageLoad() {
-			console.log('图片加载完成');
+			// console.log('图片加载完成');
 			this.$bus.$emit('imageLoad')
 		}
 	},
@@ -67,5 +67,6 @@ export default {
 	font-size: 12px;
 	overflow:hidden; 
 	text-overflow:ellipsis;
+	margin-top: 3px;
 }
 </style>
