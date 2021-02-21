@@ -74,6 +74,9 @@ export default {
 			this.$refs.bs.refresh()
 		})
 	},
+	destroyed() {
+		this.$bus.$off('imageLoad')
+	},
 	computed: {
 		activated() {
 			
@@ -83,8 +86,8 @@ export default {
 		// 网络请求
 		getDiscoverMethod() {
 			getDiscover().then(res => {
-				// console.log(res);
-				this.mlog = res.data.blocks[2].extInfo
+				console.log(res);
+				this.mlog = res.data.blocks[3].extInfo
 				console.log(this.mlog);
 			})
 		},

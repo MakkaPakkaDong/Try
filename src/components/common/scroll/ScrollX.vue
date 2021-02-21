@@ -31,15 +31,15 @@ export default {
 				scrollX: true,
 				probeType: 3
 			})
-			this.bs.on('scrollStart', () => {
-				console.log('scrollStart-');
-			})
-			this.bs.on('scroll', ({ y }) => {
-				console.log('scrolling-');
-			})
-			this.bs.on('scrollEnd', () => {
-				console.log('scrollingEnd');
-			})
+			// this.bs.on('scrollStart', () => {
+			// 	console.log('scrollStart-');
+			// })
+			// this.bs.on('scroll', ({ y }) => {
+			// 	console.log('scrolling-');
+			// })
+			// this.bs.on('scrollEnd', () => {
+			// 	console.log('scrollingEnd');
+			// })
 		},
 		refresh() {
 			this.bs && this.bs.refresh()
@@ -55,23 +55,10 @@ export default {
 
 .scroll-wrapper {
 	overflow: hidden;
-	/* width: 90%; */
-	/* border: 1px solid #42b983; */
-	border-radius: 5px;
-	/* margin: 80px auto; */
 	white-space: nowrap;
 }
 
 .scroll-content{
 	display: inline-block;
 }
-
-/* .scroll-item {
-	display: inline-block;
-	width: 100px;
-	height: 20px;
-	background-color: rgb(217, 255, 0);
-	text-align: center;
-	padding: 0 10px;
-} */
 </style>

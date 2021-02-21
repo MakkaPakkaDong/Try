@@ -27,15 +27,15 @@ export default {
         probeType: 3,
         click: true,
       });
-      this.bs.on("scrollStart", () => {
-        console.log("scrollStart-");
-      });
-      this.bs.on("scroll", ({ y }) => {
-        console.log("scrolling-");
-      });
-      this.bs.on("scrollEnd", (pos) => {
-        console.log(pos);
-      });
+      // this.bs.on("scrollStart", () => {
+      //   console.log("scrollStart-");
+      // });
+      // this.bs.on("scroll", ({ y }) => {
+      //   console.log("scrolling-");
+      // });
+      // this.bs.on("scrollEnd", (pos) => {
+      //   console.log(pos);
+      // });
     },
 		refresh() {
 			this.bs && this.bs.refresh()

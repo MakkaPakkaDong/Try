@@ -1,20 +1,14 @@
 <template>
 	<div id="village">
-		<span @click="isShow">Village</span>
-		<span>{{show}}</span>
-		<vill-popup></vill-popup>
+		待开发
 	</div>
 </template>
 
 <script>
-// import { mapMutations } from 'vuex';
-
-import VillPopup from './childcomps/VillPopup'
 
 export default {
 	name: 'Village',
 	components: {
-		VillPopup
 	},
 	data() {
 		return {
@@ -22,18 +16,25 @@ export default {
 		}
 	},
 	computed: {
-		show: function() {
-			return this.$store.state.show
-		}
+		
 	},
 	methods: {
-		isShow: function() {
-			this.$store.commit('changeShow')
-		}
+		
 	},
 }
 </script>
 
 <style scoped>
-
+#village {
+	margin-top: 25%;
+	margin-left: 10%;
+	color: #747474;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 50px;
+	width: 80%;
+	border: 3px solid rgba(138, 0, 0, 0.2);
+	border-radius: 8px;
+	text-align: center;
+}
 </style>

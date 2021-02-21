@@ -54,6 +54,9 @@ export default {
 			this.$refs.bs.refresh()
 		})
 	},
+	destroyed() {
+		this.$bus.$off('SingerimageLoad')
+	},
 	methods: {
 		tabClick(index) {
 			switch (index) {

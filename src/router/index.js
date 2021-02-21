@@ -5,6 +5,8 @@ const Discover = () => import('../views/discover/Discover')
 const Singer = () => import('../views/singer/Singer')
 const Profile = () => import('../views/profile/Profile')
 const Village = () => import('../views/village/Village')
+const SingerPage = () => import('../views/detail/singerpage/SingerPage')
+const PlayerPage = () => import('../views/detail/playerpage/PlayerPage')
 
 Vue.use(VueRouter)
 
@@ -30,6 +32,14 @@ const routes = [
 	{
 		path: "/village",
 		component: Village
+	},
+	{
+		path: "/singerpage/:id",
+		component: SingerPage
+	},
+	{
+		path: "/playerpage/:id",
+		component: PlayerPage
 	}
 ]
 

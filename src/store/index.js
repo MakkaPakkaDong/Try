@@ -9,6 +9,10 @@ Vue.use(Vuex)
 
 const state = {
 	show: false,
+	miniShow: false,
+	isPlayerShow: true,
+	miniPlayerShow: false,
+	songsList: [] //播放列表
 }
 
 const store = new Vuex.Store({

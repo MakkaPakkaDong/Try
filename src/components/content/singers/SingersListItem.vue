@@ -1,5 +1,5 @@
 <template>
-  <li class="singers-item">
+  <li class="singers-item" @click="itemClick">
     <img :src="singersItem.picUrl" alt="" @load="imageLoad"/>
     <span class="singer-name">{{ singersItem.name }}</span>
   </li>
@@ -16,10 +16,17 @@ export default {
       },
     },
   },
+	created() {
+	},
+	mounted() {
+	},
 	methods: {
 		imageLoad() {
 			console.log("监听到图片加载完成");
 			this.$bus.$emit('SingerimageLoad')
+		},
+		itemClick() {
+			this.$router.push('/singerpage/' + this.singersItem.id)
 		}
 	},
 };

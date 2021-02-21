@@ -6,7 +6,7 @@
 	<div class="dis-mlog">
 		<div class="scroll-item" v-for="(item, index) in mlog" :key="index">
 			<img slot="mlog-img" :src="item.resource.mlogBaseData.coverUrl" alt="" @load="imageLoad">
-			<div class="mlog-title" slot="mlog-text">{{item.resource.mlogBaseData.text}}</div>
+			<div class="mlog-title">{{item.resource.mlogBaseData.text}}</div>
 		</div>
 	</div>
 </template>

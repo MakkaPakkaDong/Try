@@ -3,6 +3,7 @@
 		<!-- <div class="left"><slot name="left"></slot></div> -->
 		<div class="left" @click="isShow">
 			<img src="~assets/img/discover/task-list.svg" alt="">
+			<!-- <div ><slot></slot></div> -->
 		</div>
 		<nav-bar-popup></nav-bar-popup>
 		<div class="center"><slot name="center"></slot></div>
@@ -24,9 +25,9 @@ export default {
 		NavBarPopup
 	},
 	computed: {
-		show: function() {
-			return this.$store.state.show
-		}
+		// show: function() {
+		// 	return this.$store.state.show
+		// }
 	},
 	methods: {
 		isShow: function() {
